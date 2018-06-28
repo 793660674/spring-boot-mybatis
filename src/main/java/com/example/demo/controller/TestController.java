@@ -1,4 +1,4 @@
-package com.controller;
+package com.example.demo.controller;
 
 import java.util.List;
 
@@ -7,16 +7,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.mapper.CountInfoMapper;
-import com.model.CountInfo;
-import com.model.CountInfoExample;
-import com.model.CountInfoExample.Criteria;
+import com.example.demo.mapper.CountInfoMapper;
+import com.example.demo.model.CountInfo;
+import com.example.demo.model.CountInfoExample;
+import com.example.demo.model.CountInfoExample.Criteria;
+import com.example.demo.service.Test;
+
 
 @Controller
 @RequestMapping("/count")
 public class TestController extends BaseController {
 	@Autowired
-	private CountInfoMapper countInfoMapper;
+	private Test test;
 
 	// 拓展班级 新增接口
 	@ResponseBody
@@ -26,7 +28,7 @@ public class TestController extends BaseController {
 		Criteria criteria = example.createCriteria();
 		criteria.andYearBetween(0, 9999);
 		example.setOrderByClause("username asc,email desc");
-		List<CountInfo> list = countInfoMapper.selectByExample(example);
+		List<CountInfo> list = test.getasd(example);
 		return renderSuccess(list);
 	}
 

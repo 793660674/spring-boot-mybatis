@@ -8,7 +8,7 @@ public class ZhongJiang {
 		while (true) {
 			int qiu=(int)(Math.random()*33)+1;
 			hongQiuZhongJiang.add(qiu);
-			if (hongQiuZhongJiang.size()==6) {
+			if (hongQiuZhongJiang.size()==5) {
 				break;
 			}
 		}
@@ -16,10 +16,10 @@ public class ZhongJiang {
 		while (true) {
 			int qiu=(int)(Math.random()*16)+1;
 			lanQiuZhongJiang.add(qiu);
-			if (lanQiuZhongJiang.size()==1) {
+			if (lanQiuZhongJiang.size()==2) {
 				break;
 			}
 		}
-		System.out.println("蓝球中奖号:"+hongQiuZhongJiang+"红球球中奖号:"+lanQiuZhongJiang);
+		System.out.println("红球中奖号:"+hongQiuZhongJiang+"蓝球中奖号:"+lanQiuZhongJiang);
 	}
 }

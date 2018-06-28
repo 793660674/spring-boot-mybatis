@@ -1,7 +1,7 @@
-package com.mapper;
+package com.example.demo.mapper;
 
-import com.model.CountInfo;
-import com.model.CountInfoExample;
+import com.example.demo.model.CountInfo;
+import com.example.demo.model.CountInfoExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

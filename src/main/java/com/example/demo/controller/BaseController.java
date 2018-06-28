@@ -1,8 +1,8 @@
-package com.controller;
+package com.example.demo.controller;
 
 import java.util.Date;
 
-import com.model.JsonResult;
+import com.common.JsonResult;
 
 
 /**
